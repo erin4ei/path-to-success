@@ -1,16 +1,16 @@
 /* CSS BY NAME */
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
     color: var(--dark-gray);
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--purple)
+    background-color: var(--lavender);
 }
 
 h1, h2 {
-    font-family:'Kavoon';
+    font-family: 'Kavoon', sans-serif;
 }
 
 h1 {
@@ -18,13 +18,57 @@ h1 {
     color: var(--white);
 }
 
+/* HEADER STYLES */
+
+header h1 {
+    font-family: 'Kavoon';
+    font-size: 4rem;
+    text-align: center;
+}
+
 header p {
     color: var(--white);
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* NAVIGATION STYLES */
+
+nav {
+    background-color: var(--yellow);
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
 nav h2 {
     font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: auto;
 }
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+nav a {
+    color: var(--purple);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem 0;
+    background-color: var(--white);
+}
+
+/* CONTENT */
 
 h2 {
     font-size: 2em;
@@ -36,6 +80,58 @@ h3 {
 
 h4 {
     font-size: 1.15em;
+}
+
+/* PRICING */
+
+#pricing {
+    background-color: var(--purple);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+#pricing h2 {
+    color: var(--white);
+    font-family: 'Kavoon';
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+#pricing h3 {
+    color: var(--yellow);
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+#pricing table {
+    width: 100%;
+    margin: 1rem 0 2rem;
+    border: 2px solid var(--yellow);
+    border-spacing: 0;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+#pricing th {
+    align-content: center;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid var(--yellow);
+    background-color: var(--yellow);
+}
+
+#pricing td {
+    align-content: center;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid var(--yellow);
+}
+
+#pricing th, #pricing td {
+    padding: 12px 15px;
 }
 
 /* IMPORTED FONTS */
