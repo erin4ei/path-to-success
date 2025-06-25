@@ -4,9 +4,12 @@ body {
     font-family: 'Inter', sans-serif !important;
     color: var(--dark-gray);
     line-height: 1.6;
-    margin: 0;
+    margin: 0 auto !important;
     padding: 0;
     background-color: var(--lavender);
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2 {
@@ -29,7 +32,7 @@ header {
 
 header h1 {
     font-family: 'Kavoon';
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -68,7 +71,6 @@ nav ul {
     gap: 0.5rem;
     padding: 1rem;
     margin: 0 auto;
-    max-width: 300px;
 }
 
 nav a {
@@ -78,6 +80,8 @@ nav a {
     display: block;
     padding: 0.5rem 0;
     background-color: var(--white);
+    max-width: 365px;
+    margin: 0 auto
 }
 
 /* CONTENT */
@@ -92,14 +96,14 @@ nav a {
 #services h2 {
     font-family: 'Kavoon';
     color: var(--white);
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 0 1rem;
     margin: 0.5rem;
 }
 
 #services h3 {
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.5em;
     color: var(--yellow);
     padding: 0 1rem;
     margin: 0.5rem;
@@ -111,7 +115,7 @@ nav a {
 
 #services h4 {
     color: var(--purple);
-    font-size: 1.25rem;
+    font-size: 1.15em;
     font-weight: bold;
     padding-bottom: 0.5rem;
 
@@ -131,8 +135,10 @@ nav a {
 
 #services div {
     background-color: var(--white);
+    margin: 0 auto;
     margin-bottom: 1rem;
     border-radius: 16px;
+    max-width: 365px;
     padding: 1rem;
 }
 
@@ -146,7 +152,7 @@ nav a {
 #why-us h2 {
     color: var(--white);
     font-family: 'Kavoon';
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 0.4rem;
     text-align: left;
 }
@@ -192,14 +198,15 @@ nav a {
 #pricing {
     background-color: var(--purple);
     padding: 2rem;
-    border-radius: 8px;
     margin: 2rem 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 #pricing h2 {
     color: var(--white);
     font-family: 'Kavoon';
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 0.4rem;
     text-align: left;
 }
@@ -207,7 +214,7 @@ nav a {
 #pricing h3 {
     color: var(--yellow);
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 #pricing table {
@@ -250,7 +257,7 @@ nav a {
 #contact h2 {
     color: var(--white);
     font-family: 'Kavoon';
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 0.4rem;
     text-align: left;
 }
@@ -360,3 +367,10 @@ table {
 
 /* GLOBAL STYLES (mobile first/small) */
 
+@media (max-width: 450px) {
+    body {
+        padding: 0 0.5rem;
+        box-sizing: border-box;
+    }
+
+}
